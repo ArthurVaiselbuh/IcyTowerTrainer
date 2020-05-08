@@ -1,3 +1,5 @@
+output/
+.vs/
 # Prerequisites
 *.d
 
