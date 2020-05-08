@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="27">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Floor"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[icytower13.exe+CB908]*4+icytower13.exe+cb920</Address>
+      <Offsets>
+        <Offset>28</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"Current Combo"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[icytower13.exe+CB908]*4+icytower13.exe+cb920</Address>
+      <Offsets>
+        <Offset>28+1c</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"Best Combo"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[icytower13.exe+CB908]*4+icytower13.exe+cb920</Address>
+      <Offsets>
+        <Offset>68</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"Additional Score"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[icytower13.exe+CB908]*4+icytower13.exe+cb920</Address>
+      <Offsets>
+        <Offset>2c</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
