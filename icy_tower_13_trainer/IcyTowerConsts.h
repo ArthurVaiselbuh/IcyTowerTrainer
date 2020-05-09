@@ -2,6 +2,8 @@
 #include <Windows.h>
 
 #define MSGQUEUE_NAME "ICYTOWER13TRAINER"
+#define DLLNAME L"icy_tower_trainer.dll"
+#define GAME_PROCESS_NAME L"icytower13.exe"
 
 // this should be at the base of the IcyTower exe address
 typedef struct _IcyTower13Module{

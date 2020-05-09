@@ -21,12 +21,21 @@
     <ClInclude Include="..\icy_tower_13_trainer\IcyTowerConsts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Injector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\ScopeGuard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IcyTower13TrainerClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Injector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

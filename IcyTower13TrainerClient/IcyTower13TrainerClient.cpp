@@ -5,9 +5,12 @@
 #include <iostream>
 #include <boost/interprocess/ipc/message_queue.hpp>
 #include "IcyTowerConsts.h"
+#include "Injector.h"
 
 using namespace boost::interprocess;
 using namespace std;
+
+
 void show_menu() {
 	cout << "Waiting for next command: ([msgtype] [feature] [[value]])" << endl;
 	cout << "\t:: Message Types::" << endl;
@@ -24,6 +27,14 @@ void show_menu() {
 int main()
 {
 	message_queue mq(open_only, MSGQUEUE_NAME);
+	//inject dll into game
+	Injector inj(GAME_PROCESS_NAME);
+	cout << "About to inject into process " << inj._pid << endl;
+	cin.ignore();
+	if (!inj.inject(DLLNAME)) {
+		cout << "Injection failed!" << endl;
+		return 1;
+	}
 	while (true) {
 		show_menu();
 		int msgtype = 0, feature = 0, value = 0;
